@@ -1,0 +1,59 @@
+<!--
+HEADER UTILIADO PARA LA INTERFAZ
+-->
+<ul class="x-navigation x-navigation-horizontal x-navigation-panel">
+<!-- BOTON ESCONDER SIDEBAR --
+<li class="xn-icon-button">
+    <a href="#" class="x-navigation-minimize"><span class="fa fa-dedent"></span></a>
+</li>
+<!-- FIN BOTON ESCONDER SIDEBAR  -->
+<!-- BUSCAR -->
+<li class="xn-search">
+    <form role="form">
+        <input type="text" name="search" placeholder="Buscar..."/>
+    </form>
+</li>   
+<!-- FIN BUSCAR -->                    
+<!-- SALIR -->
+<li class="xn-icon-button pull-right last">
+    <a href="#"><span class="fa fa-power-off"></span></a>
+    <ul class="xn-drop-left animated zoomIn">
+        <li><a href="pages-lock-screen.html"><span class="fa fa-lock"></span> Bloquear Pantalla</a></li>
+        <li><a href="#" class="mb-control" data-box="#mb-signout"><span class="fa fa-sign-out"></span> Cerrar Sesión</a></li>
+    </ul>                        
+</li> 
+<!-- FIN SALIR -->                    
+<!-- NOTIFICACIONES -->
+<li class="xn-icon-button pull-right">
+    <a href="#"><span class="fa fa-bell"></span></a>
+    <!-- BURBUJA CANTIDAD DE NOTIFICACIONES --
+    <div class="informer informer-danger">4</div>
+    <!-- FIN BURBUJA CANTIDAD DE NOTIFICACIONES -->
+    <div class="panel panel-primary animated zoomIn xn-drop-left xn-panel-dragging">
+        <div class="panel-heading">
+            <h3 class="panel-title"><span class="fa fa-bell"></span> Notificaciones</h3>                                
+            <div class="pull-right">
+                <span class="label label-danger">2 Nuevos</span>
+            </div>
+        </div>
+        <div class="panel-body list-group list-group-contacts scroll" style="height: 200px;">
+            <a href="#" class="list-group-item">
+                <div class="list-group-status status-away"></div>
+                <img src="assets/images/users/alert.jpg" class="pull-left" alt="notificacion"/>
+                <span class="contacts-title">Muy Pronto.</span>
+                <p>Sistema de notificaciones</p>
+            </a>
+            <a href="#" class="list-group-item">
+                <div class="list-group-status status-away"></div>
+                <img src="assets/images/users/message.jpg" class="pull-left" alt="notificacion"/>
+                <span class="contacts-title">Alertas y más.</span>
+                <p>Tu empresa es lo más importante, no pases nada por alto</p>
+            </a>
+        </div>     
+        <div class="panel-footer text-center">
+            <a href="#">Todas las notificaciones</a>
+        </div>                            
+    </div>                        
+</li>
+<!-- FIN NOTIFICACIONES -->
+</ul>
