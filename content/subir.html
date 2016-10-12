@@ -4,7 +4,7 @@ CONTENIDO DE LA SECCION DE INICIO
                 <!-- INDICE -->
                 <ul class="breadcrumb">
                     <li><a href="#">CABIS</a></li>                    
-                    <li class="active">Subir Información</li>
+                    <li class="active">Gestión comercial</li>
                 </ul>
                 <!-- FIN INDICE --> 
                     <div class="page-content-wrap">
@@ -42,253 +42,423 @@ CONTENIDO DE LA SECCION DE INICIO
                             </div>    
                         </div>
                         <!-- FIN WIDGET RELOJ -->
-                        <!-- SUBIR COMISIONS KIT Y CHIP -->
-                        <div class="col-md-6">
-                            <div class="panel panel-default">
-                                <div class="panel-body">
-                                    <h3>Comisiones</h3> 
-                                    <h5>CHIP y KIT</h5>
-                                    <form class="form-horizontal" role="form">     
-                                        <div class="form-group">
-                                            <label class="col-md-3 control-label">Año y mes</label>
-                                            <div class="col-md-5">
+                        <!-- TABS -->
+                        <div class="page-tabs">
+                            <a href="#comven" class="active">Comrpas | Ventas</a>
+                            <a href="#combon">Comisiones | Bonos</a>
+                            <a href="#avireg">Avisos | Regularizaciones</a>
+                        </div>
+                        <div class="page-content-wrap page-tabs-item active" id="comven">
+                            <!-- VENDER -->
+                            <div class="row">
+                            <div class="col-md-6">
+                                <div class="panel panel-default nav-tabs-vertical">                   
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">Registrar ventas</h3>
+                                    </div>
+                                    <div class="tabs">
+                                        <ul class="nav nav-tabs">
+                                            <li class="active"><a href="#chip" data-toggle="tab">CHIP</a></li>
+                                            <li><a href="#kit" data-toggle="tab">KIT</a></li>
+                                        </ul>                    
+                                        <div class="panel-body tab-content">
+                                            <div class="tab-pane active" id="chip">
+                                                <form class="form-horizontal" role="form">
+                                                    <div class="form-group">                                                                                
+                                                        <select class="form-control select" data-live-search="true">
+                                                            <option>Cliente</option>
+                                                            <option>GOLDCELULLAR S.A.</option>
+                                                            <option>RODRIGUEZ FIGUEROA JOSE</option>
+                                                            <option>ALVAREZ BAÑO MARIA ALEXANDRA</option>
+                                                            <option>PERALTA MENENDEZ MERCEDES CARLINA</option>
+                                                            <option>ACCESORIOS Y CELULARES EL ARABITO</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="input-group date">
+                                                            <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                                            <input type="text" id="dp-7" class="form-control" value="2016-10-01"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="input-group">
+                                                            <span class="input-group-addon">#</span>
+                                                            <input type="text" class="form-control" placeholder="Serie inicial"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="input-group">
+                                                            <span class="input-group-addon">+</span>
+                                                            <input type="text" class="form-control" placeholder="Cantidad"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="input-group">
+                                                            <span class="input-group-addon">$</span>
+                                                            <input type="text" class="form-control" placeholder="Precio"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <button class="btn btn-primary pull-right"><span class="fa fa-dollar"></span>Vender</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="tab-pane" id="kit">
+                                                <form class="form-horizontal" role="form">
+                                                    <div class="form-group">                                                                                
+                                                        <select class="form-control select" data-live-search="true">
+                                                            <option>Cliente</option>
+                                                            <option>GOLDCELULLAR S.A.</option>
+                                                            <option>RODRIGUEZ FIGUEROA JOSE</option>
+                                                            <option>ALVAREZ BAÑO MARIA ALEXANDRA</option>
+                                                            <option>PERALTA MENENDEZ MERCEDES CARLINA</option>
+                                                            <option>ACCESORIOS Y CELULARES EL ARABITO</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="input-group date">
+                                                            <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                                            <input type="text" id="dp-7" class="form-control" value="2016-10-01"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="input-group">
+                                                            <span class="input-group-addon">+</span>
+                                                            <input type="text" id="cantidad" class="form-control" placeholder="Cantidad"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="input-group">
+                                                            <span class="input-group-addon">#</span>
+                                                            <input type="text" class="form-control" placeholder="Ingrese serie"/>
+                                                            <span class="input-group-btn">
+                                                                <button id="agregarfila" class="btn btn-default" type="button">
+                                                                    <span class="glyphicon glyphicon-plus"></span>
+                                                                </button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div id="serieadicional" class="form-group"></div>    
+                                                    <div class="form-group">
+                                                        <div class="input-group">
+                                                            <span class="input-group-addon">$</span>
+                                                            <input type="text" class="form-control" placeholder="Precio"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <button class="btn btn-primary pull-right"><span class="fa fa-dollar"></span>Vender</button>
+                                                    </div>
+                                                </form>
+                                            </div>                       
+                                        </div>
+                                    </div>
+                                </div>                        
+                            </div>
+                            <!-- FIN VENDER -->
+                            <!-- COMPRAR -->
+                            <div class="col-md-6">
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <h3>Registrar compras</h3>
+                                        <form class="form-horizontal" role="form">
+                                            <div class="form-group">
                                                 <div class="input-group date">
-                                                    <input type="text" id="dp-3" class="form-control" value="2016-10"/>
                                                     <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                                    <input type="text" id="dp-8" class="form-control" value="2016-10-01"/>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-md-3 control-label">Periodo</label>
-                                            <div class="col-md-9">                                                                                
-                                                <select class="form-control select" data-style="btn-success">
-                                                    <option>Primero</option>
-                                                    <option>Segundo</option>
-                                                    <option>Tercero</option>
-                                                </select>
-                                            </div>
-                                        </div>    
-                                        <div class="form-group">
-                                            <label class="col-md-3 control-label">Región</label>
-                                            <div class="col-md-2">                                    
-                                                <label class="check"><input type="radio" class="icheckbox" name="iradio" checked="checked"/> R1</label>
-                                            </div>
-                                            <div class="col-md-2">                                    
-                                                <label class="check"><input type="radio" class="icheckbox" name="iradio"/> R2</label>
-                                            </div>
-                                            <div class="col-md-2">                                    
-                                                <label class="check"><input type="radio" class="icheckbox" name="iradio"/> R3</label>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-md-2 control-label"></label>
-                                            <div class="col-md-10">
-                                                <input type="file" class="fileinput btn-danger" name="filename3" id="filename3" data-filename-placement="inside" title="Explorar..."/>
-                                                <button class="btn btn-primary pull-right"><span class="fa fa-cloud-upload"></span>Subir Comisiones</button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>  
-                        </div>
-                        <!-- FIN SUBIR COMISIONS KIT Y CHIP -->
-                        <!-- SUBIR BONOS KIT Y CHIP -->
-                        <div class="col-md-6">
-                            <div class="panel panel-default">
-                                <div class="panel-body">
-                                    <h3>Bonos</h3> 
-                                    <h5>CHIP y KIT</h5>
-                                    <form class="form-horizontal" role="form">     
-                                        <div class="form-group">
-                                            <label class="col-md-3 control-label">Año y mes</label>
-                                            <div class="col-md-5">
-                                                <div class="input-group date">
-                                                    <input type="text" id="dp-5" class="form-control" value="2016-10"/>
-                                                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-md-3 control-label">Región</label>
-                                            <div class="col-md-2">                                    
-                                                <label class="check"><input type="radio" class="icheckbox" name="iradio" checked="checked"/> R1</label>
-                                            </div>
-                                            <div class="col-md-2">                                    
-                                                <label class="check"><input type="radio" class="icheckbox" name="iradio"/> R2</label>
-                                            </div>
-                                            <div class="col-md-2">                                    
-                                                <label class="check"><input type="radio" class="icheckbox" name="iradio"/> R3</label>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-md-2 control-label"></label>
-                                            <div class="col-md-10">
-                                                <input type="file" class="fileinput btn-danger" name="filename3" id="filename3" data-filename-placement="inside" title="Explorar..."/>
-                                                <button class="btn btn-primary pull-right"><span class="fa fa-cloud-upload"></span>Subir Bonos</button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>    
-                        </div>
-                        <!-- FIN SUBIR BONOS KIT Y CHIP -->
-                        <!-- SUBIR LINEAS REGULARIZADAS -->
-                        <div class="col-md-12">
-                            <div class="panel panel-default">
-                                <div class="panel-body">
-                                    <h3>Líneas Regularizadas</h3>
-                                    <form class="form-horizontal" role="form">     
-                                        <div class="form-group">
-                                            <label class="col-md-2 control-label">Rango de fecha</label>
-                                            <div class="col-md-3">
+                                            <div class="form-group">
                                                 <div class="input-group">
-                                                    <input type="text" class="form-control datepicker" value="2016-10-01"/>
-                                                    <span class="input-group-addon add-on"> - </span>
-                                                    <input type="text" class="form-control datepicker" value="2016-10-05"/>
+                                                    <span class="input-group-addon">#</span>
+                                                    <input type="text" class="form-control" placeholder="Serie inicial"/>
                                                 </div>
                                             </div>
-                                            <label class="col-md-1 control-label"> Región</label>
-                                            <div class="col-md-1">
-                                                
-                                                <label class="check"><input type="radio" class="icheckbox" name="iradio" checked="checked"/> R1</label>
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">+</span>
+                                                    <input type="text" class="form-control" placeholder="Cantidad"/>
+                                                </div>
                                             </div>
-                                            <div class="col-md-1">                                    
-                                                <label class="check"><input type="radio" class="icheckbox" name="iradio"/> R2</label>
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">$</span>
+                                                    <input type="text" class="form-control" placeholder="Costo"/>
+                                                </div>
                                             </div>
-                                            <div class="col-md-1">                                    
-                                                <label class="check"><input type="radio" class="icheckbox" name="iradio"/> R3</label>
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">$</span>
+                                                    <input type="text" class="form-control" placeholder="Número de factura"/>
+                                                </div>
                                             </div>
-                                            <input type="file" class="fileinput btn-danger" name="filename3" id="filename3" data-filename-placement="inside" title="Explorar..."/>
-                                            <button class="btn btn-primary pull-right"><span class="fa fa-cloud-upload"></span>Subir Líneas</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>    
-                        </div>
-                        <!-- FIN SUBIR LINEAS REGULARIZADAS -->
-                        <div class="col-sm-4">
-                            <!-- SUBIR VENTAS -->
-                            <div class="panel panel-default">
-                                <div class="panel-body">
-                                    <h3>Ventas</h3>
-                                    <form class="form-horizontal" role="form">     
-                                        <div class="form-group">
-                                            <label class="col-md-2 control-label"> Región</label>
-                                            <div class="col-md-3">
-                                                <label class="check"><input type="radio" class="icheckbox" name="iradio" checked="checked"/> R1</label>
+                                            <div class="form-group">
+                                                <button class="btn btn-primary pull-right"><span class="fa fa-dollar"></span>Vender</button>
                                             </div>
-                                            <div class="col-md-3">                                    
-                                                <label class="check"><input type="radio" class="icheckbox" name="iradio"/> R2</label>
-                                            </div>
-                                            <div class="col-md-3">                                    
-                                                <label class="check"><input type="radio" class="icheckbox" name="iradio"/> R3</label>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="file" class="fileinput btn-danger" name="filename3" id="filename3" data-filename-placement="inside" title="Explorar..."/>
-                                            <button class="btn btn-primary pull-right"><span class="fa fa-cloud-upload"></span>Subir Ventas</button>
-                                        </div>
-                                    </form>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
-                            <!-- FIN SUBIR Ventas -->        
-                            <!-- SUBIR COMPRAS -->
-                            <div class="panel panel-default">
-                                <div class="panel-body">
-                                    <h3>Compras</h3>
-                                    <form class="form-horizontal" role="form">     
-                                        <div class="form-group">
-                                            <label class="col-md-3 control-label">Producto</label>
-                                            <div class="col-md-8">                                                                                
-                                                <select class="form-control select" data-style="btn-success">
-                                                    <option>CHIP</option>
-                                                    <option>KIT</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-md-2 control-label"> Región</label>
-                                            <div class="col-md-3">
-                                                <label class="check"><input type="radio" class="icheckbox" name="iradio" checked="checked"/> R1</label>
-                                            </div>
-                                            <div class="col-md-3">                                    
-                                                <label class="check"><input type="radio" class="icheckbox" name="iradio"/> R2</label>
-                                            </div>
-                                            <div class="col-md-3">                                    
-                                                <label class="check"><input type="radio" class="icheckbox" name="iradio"/> R3</label>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="file" class="fileinput btn-danger" name="filename3" id="filename3" data-filename-placement="inside" title="Explorar..."/>
-                                            <button class="btn btn-primary pull-right"><span class="fa fa-cloud-upload"></span>Subir Ventas</button>
-                                        </div>
-                                    </form>
-                                </div>
+                            <!-- FIN COMPRAR -->
                             </div> 
-                            <!-- FIN SUBIR COMPRAS -->
-                        </div>
-                        <!-- SUBIR AVISOS -->
-                        <div class="col-sm-8">
-                            <div class="panel panel-default">
-                                <div class="panel-body">
-                                    <h3>Avisos de tarjetas</h3>
-                                    <h5>CHIP y KIT</h5>
-                                    <form class="form-horizontal" role="form">     
-                                        <div class="form-group">
-                                            <label class="col-md-3 control-label">Rango de fecha</label>
-                                            <div class="col-md-8">
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control datepicker" value="2016-10-01"/>
-                                                    <span class="input-group-addon add-on"> - </span>
-                                                    <input type="text" class="form-control datepicker" value="2016-10-05"/>
+                            <!-- SUBIR VENTAS -->
+                            <div class="col-md-6">
+                                <div class="col-md-8">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <h3>Ventas por archivo</h3>
+                                            <form class="form-horizontal" role="form">     
+                                                <div class="form-group">
+                                                    <label class="col-md-2 control-label"> Región</label>
+                                                    <div class="col-md-3">
+                                                        <label class="check"><input type="radio" class="icheckbox" name="iradio" checked="checked"/> R1</label>
+                                                    </div>
+                                                    <div class="col-md-3">                                    
+                                                        <label class="check"><input type="radio" class="icheckbox" name="iradio"/> R2</label>
+                                                    </div>
+                                                    <div class="col-md-3">                                    
+                                                        <label class="check"><input type="radio" class="icheckbox" name="iradio"/> R3</label>
+                                                    </div>
                                                 </div>
-                                            </div>  
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-md-3 control-label">Fecha de recarga</label>
-                                            <div class="col-md-8">
-                                                <div class="input-group date">
-                                                    <input type="text" id="dp-6" class="form-control" value="2016-10-01"/>
-                                                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                                <div class="form-group">
+                                                    <input type="file" class="fileinput btn-danger" name="filename3" id="filename3" data-filename-placement="inside" title="Explorar..."/>
+                                                    <button class="btn btn-primary pull-right"><span class="fa fa-cloud-upload"></span>Subir Ventas</button>
                                                 </div>
-                                            </div>
+                                            </form>
                                         </div>
-                                        <div class="form-group">
-                                            <label class="col-md-3 control-label">Tipo de producto</label>
-                                            <div class="col-md-8">                                                                                
-                                                <select class="form-control select" data-style="btn-success">
-                                                    <option>CHIP</option>
-                                                    <option>KIT</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-md-3 control-label"> Región</label>
-                                            <div class="col-md-3">
-                                                <label class="check"><input type="radio" class="icheckbox" name="iradio" checked="checked"/> R1</label>
-                                            </div>
-                                            <div class="col-md-3">                                    
-                                                <label class="check"><input type="radio" class="icheckbox" name="iradio"/> R2</label>
-                                            </div>
-                                            <div class="col-md-3">                                    
-                                                <label class="check"><input type="radio" class="icheckbox" name="iradio"/> R3</label>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="col-md-3">
-                                            </div>
-                                            <div class="col-md-3">
-                                                <input type="file" class="fileinput btn-danger pull-right" name="filename3" id="filename3" data-filename-placement="inside" title="Explorar..."/>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <button class="btn btn-primary pull-right"><span class="fa fa-cloud-upload"></span>Subir Avisos</button>
-                                            </div>
-                                        </div>  
-                                    </form>
+                                    </div>
                                 </div>
-                            </div>    
-                        </div>
-                        <!-- FIN SUBIR AVISOS -->
+                            </div>
+                            <!-- FIN SUBIR VENTAS -->
+                            <!-- SUBIR COMPRAS -->
+                            <div class="col-md-6">
+                                <div class="col-md-8">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <h3>Compras por archivo</h3>
+                                            <form class="form-horizontal" role="form">     
+                                                <div class="form-group">
+                                                    <label class="col-md-3 control-label">Producto</label>
+                                                    <div class="col-md-8">                                                                                
+                                                        <select class="form-control select" data-style="btn-success">
+                                                            <option>CHIP</option>
+                                                            <option>KIT</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-md-2 control-label"> Región</label>
+                                                    <div class="col-md-3">
+                                                        <label class="check"><input type="radio" class="icheckbox" name="iradio" checked="checked"/> R1</label>
+                                                    </div>
+                                                    <div class="col-md-3">                                    
+                                                        <label class="check"><input type="radio" class="icheckbox" name="iradio"/> R2</label>
+                                                    </div>
+                                                    <div class="col-md-3">                                    
+                                                        <label class="check"><input type="radio" class="icheckbox" name="iradio"/> R3</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="file" class="fileinput btn-danger" name="filename3" id="filename3" data-filename-placement="inside" title="Explorar..."/>
+                                                    <button class="btn btn-primary pull-right"><span class="fa fa-cloud-upload"></span>Subir Compras</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <!-- FIN SUBIR COMPRAS -->
+                        </div> 
+                            <div class="page-content-wrap page-tabs-item" id="combon">
+                                <!-- SUBIR COMISIONES KIT Y CHIP -->
+                                <div class="col-md-6">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <h3>Comisiones</h3> 
+                                            <h5>CHIP y KIT</h5>
+                                            <form class="form-horizontal" role="form">     
+                                                <div class="form-group">
+                                                    <label class="col-md-3 control-label">Año y mes</label>
+                                                    <div class="col-md-5">
+                                                        <div class="input-group date">
+                                                            <input type="text" id="dp-3" class="form-control" value="2016-10"/>
+                                                            <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-md-3 control-label">Periodo</label>
+                                                    <div class="col-md-9">                                                                                
+                                                        <select class="form-control select" data-style="btn-success">
+                                                            <option>Primero</option>
+                                                            <option>Segundo</option>
+                                                            <option>Tercero</option>
+                                                        </select>
+                                                    </div>
+                                                </div>    
+                                                <div class="form-group">
+                                                    <label class="col-md-3 control-label">Región</label>
+                                                    <div class="col-md-2">                                    
+                                                        <label class="check"><input type="radio" class="icheckbox" name="iradio" checked="checked"/> R1</label>
+                                                    </div>
+                                                    <div class="col-md-2">                                    
+                                                        <label class="check"><input type="radio" class="icheckbox" name="iradio"/> R2</label>
+                                                    </div>
+                                                    <div class="col-md-2">                                    
+                                                        <label class="check"><input type="radio" class="icheckbox" name="iradio"/> R3</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-md-2 control-label"></label>
+                                                    <div class="col-md-10">
+                                                        <input type="file" class="fileinput btn-danger" name="filename3" id="filename3" data-filename-placement="inside" title="Explorar..."/>
+                                                        <button class="btn btn-primary pull-right"><span class="fa fa-cloud-upload"></span>Subir Comisiones</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>  
+                                </div>
+                                <!-- FIN SUBIR COMISIONES KIT Y CHIP -->
+                                <!-- SUBIR BONOS KIT Y CHIP -->
+                                <div class="col-md-6">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <h3>Bonos</h3> 
+                                            <h5>CHIP y KIT</h5>
+                                            <form class="form-horizontal" role="form">     
+                                                <div class="form-group">
+                                                    <label class="col-md-3 control-label">Año y mes</label>
+                                                    <div class="col-md-5">
+                                                        <div class="input-group date">
+                                                            <input type="text" id="dp-5" class="form-control" value="2016-10"/>
+                                                            <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-md-3 control-label">Región</label>
+                                                    <div class="col-md-2">                                    
+                                                        <label class="check"><input type="radio" class="icheckbox" name="iradio" checked="checked"/> R1</label>
+                                                    </div>
+                                                    <div class="col-md-2">                                    
+                                                        <label class="check"><input type="radio" class="icheckbox" name="iradio"/> R2</label>
+                                                    </div>
+                                                    <div class="col-md-2">                                    
+                                                        <label class="check"><input type="radio" class="icheckbox" name="iradio"/> R3</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-md-2 control-label"></label>
+                                                    <div class="col-md-10">
+                                                        <input type="file" class="fileinput btn-danger" name="filename3" id="filename3" data-filename-placement="inside" title="Explorar..."/>
+                                                        <button class="btn btn-primary pull-right"><span class="fa fa-cloud-upload"></span>Subir Bonos</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>    
+                                </div>
+                                <!-- FIN SUBIR BONOS KIT Y CHIP -->
+                            </div>
+                            <div class="page-content-wrap page-tabs-item" id="avireg">
+                                <!-- SUBIR LINEAS REGULARIZADAS -->
+                                <div class="col-md-12">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <h3>Líneas Regularizadas</h3>
+                                            <form class="form-horizontal" role="form">     
+                                                <div class="form-group">
+                                                    <label class="col-md-2 control-label">Rango de fecha</label>
+                                                    <div class="col-md-3">
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control datepicker" value="2016-10-01"/>
+                                                            <span class="input-group-addon add-on"> - </span>
+                                                            <input type="text" class="form-control datepicker" value="2016-10-05"/>
+                                                        </div>
+                                                    </div>
+                                                    <label class="col-md-1 control-label"> Región</label>
+                                                    <div class="col-md-1">
+
+                                                        <label class="check"><input type="radio" class="icheckbox" name="iradio" checked="checked"/> R1</label>
+                                                    </div>
+                                                    <div class="col-md-1">                                    
+                                                        <label class="check"><input type="radio" class="icheckbox" name="iradio"/> R2</label>
+                                                    </div>
+                                                    <div class="col-md-1">                                    
+                                                        <label class="check"><input type="radio" class="icheckbox" name="iradio"/> R3</label>
+                                                    </div>
+                                                    <input type="file" class="fileinput btn-danger" name="filename3" id="filename3" data-filename-placement="inside" title="Explorar..."/>
+                                                    <button class="btn btn-primary pull-right"><span class="fa fa-cloud-upload"></span>Subir Líneas</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>    
+                                </div>
+                                <!-- FIN SUBIR LINEAS REGULARIZADAS -->
+                                <!-- SUBIR AVISOS -->
+                                <div class="col-sm-8">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <h3>Avisos de tarjetas</h3>
+                                            <h5>CHIP y KIT</h5>
+                                            <form class="form-horizontal" role="form">     
+                                                <div class="form-group">
+                                                    <label class="col-md-3 control-label">Rango de fecha</label>
+                                                    <div class="col-md-8">
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control datepicker" value="2016-10-01"/>
+                                                            <span class="input-group-addon add-on"> - </span>
+                                                            <input type="text" class="form-control datepicker" value="2016-10-05"/>
+                                                        </div>
+                                                    </div>  
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-md-3 control-label">Fecha de recarga</label>
+                                                    <div class="col-md-8">
+                                                        <div class="input-group date">
+                                                            <input type="text" id="dp-6" class="form-control" value="2016-10-01"/>
+                                                            <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-md-3 control-label">Tipo de producto</label>
+                                                    <div class="col-md-8">                                                                                
+                                                        <select class="form-control select" data-style="btn-success">
+                                                            <option>CHIP</option>
+                                                            <option>KIT</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-md-3 control-label"> Región</label>
+                                                    <div class="col-md-3">
+                                                        <label class="check"><input type="radio" class="icheckbox" name="iradio" checked="checked"/> R1</label>
+                                                    </div>
+                                                    <div class="col-md-3">                                    
+                                                        <label class="check"><input type="radio" class="icheckbox" name="iradio"/> R2</label>
+                                                    </div>
+                                                    <div class="col-md-3">                                    
+                                                        <label class="check"><input type="radio" class="icheckbox" name="iradio"/> R3</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-md-3">
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <input type="file" class="fileinput btn-danger pull-right" name="filename3" id="filename3" data-filename-placement="inside" title="Explorar..."/>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <button class="btn btn-primary pull-right"><span class="fa fa-cloud-upload"></span>Subir Avisos</button>
+                                                    </div>
+                                                </div>  
+                                            </form>
+                                        </div>
+                                    </div>    
+                                </div>
+                                <!-- FIN SUBIR AVISOS -->
+                            </div>
+                        <!-- FIN TABS -->
                     </div>
                     
                 

@@ -39,8 +39,8 @@ $(function(){
             renderer: 'area',
             width: $("#dashboard-chart").width(),
             height: 250,
-            series: [{color: "#33414E",data: seriesData[0],name: 'Facturado'}, 
-                     {color: "#3FBAE4",data: seriesData[1],name: 'Cobrado'}]
+            series: [{color: "#33414E",data: seriesData[0],name: 'CHIP'}, 
+                     {color: "#3FBAE4",data: seriesData[1],name: 'KIT'}]
     } );
 
     rdc.render();

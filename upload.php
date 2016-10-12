@@ -10,7 +10,8 @@
         <!-- FIN META -->
         <!-- CSS INCLUDE -->        
         <link rel="stylesheet" type="text/css" id="theme" href="css/theme-default.css"/>
-        <!-- FIN CSS INCLUDE -->      
+        <!-- FIN CSS INCLUDE -->  
+        <script type='text/javascript' src='js/venderkit.js'></script>
     </head>
     <body>
         <!-- CONTENIDO -->
@@ -56,6 +57,14 @@
         <script type="text/javascript" src="js/actions.js"></script>        
         <!-- END TEMPLATE -->
         <script>
+            $(function() {
+                $("#agregarfila").click(function() {
+                  $("div.serieadicional").append('<div class="seriea2" input-group">');
+                  $("div.seriea2").append('<span class="seriea3" input-group-addon">##</span>');
+                  $("span.seriea3").append('<input type="text" class="seriea4 form-control" placeholder="Ingrese serie"/>');
+                  $("input.seriea4").append('</div>');
+                });
+              });
             $(function(){
                 //Spinner
                 $(".spinner_default").spinner()
@@ -67,6 +76,8 @@
                 $('#dp-4').datepicker({startView: 1});
                 $('#dp-5').datepicker({startView: 2,viewMode: 'years',format: 'yyyy-mm',minViewMode: "months"});
                 $('#dp-6').datepicker({startView: 2,format: 'yyyy-mm-dd'});
+                $('#dp-7').datepicker({startView: 2,format: 'yyyy-mm-dd'});
+                $('#dp-8').datepicker({startView: 2,format: 'yyyy-mm-dd'});
                 //End Datepicker
             });
         </script>
