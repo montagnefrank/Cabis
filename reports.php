@@ -16,26 +16,26 @@
         <!-- CONTENIDO -->
         <div class="page-container page-navigation-top-fixed">
             <!-- SIDEBAR -->
-            <?php require 'content/sidebar.html';?>
+            <?php require 'content/sidebar.html'; ?>
             <!-- FIN SIDEBAR -->
             <div class="page-content">
                 <!-- HEADER -->
-                <?php require 'content/header.html';?>
+                <?php require 'content/header.html'; ?>
                 <!-- FIN HEADER -->            
                 <!-- SECCION DE CONTENIDO -->
-                <?php include 'content/reportes.html';?>
+                <?php include 'content/reportes.html'; ?>
                 <!-- FIN SECCION DE CONTENIDO -->                                
             </div>            
         </div>
         <!-- FIN CONTENIDO -->
         <!-- SALIDA-->
-        <?php include 'content/mensajesalida.html';?>
+        <?php include 'content/mensajesalida.html'; ?>
         <!-- FIN SALIDA->
         <!-- START PRELOADS -->
         <audio id="audio-alert" src="audio/alert.mp3" preload="auto"></audio>
         <audio id="audio-fail" src="audio/fail.mp3" preload="auto"></audio>
         <!-- END PRELOADS -->      
-    <!-- START SCRIPTS -->
+        <!-- START SCRIPTS -->
         <!-- START PLUGINS -->
         <script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
         <script type="text/javascript" src="js/plugins/jquery/jquery-ui.min.js"></script>
@@ -50,27 +50,36 @@
         <script type="text/javascript" src="js/plugins/bootstrap/bootstrap-file-input.js"></script>
         <script type="text/javascript" src="js/plugins/bootstrap/bootstrap-select.js"></script>
         <script type="text/javascript" src="js/plugins/tagsinput/jquery.tagsinput.min.js"></script>
+        
+        <script type="text/javascript" src="js/plugins/datatables/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="js/plugins/tableexport/tableExport.js"></script>
+	<script type="text/javascript" src="js/plugins/tableexport/jquery.base64.js"></script>
+	<script type="text/javascript" src="js/plugins/tableexport/html2canvas.js"></script>
+	<script type="text/javascript" src="js/plugins/tableexport/jspdf/libs/sprintf.js"></script>
+	<script type="text/javascript" src="js/plugins/tableexport/jspdf/jspdf.js"></script>
+	<script type="text/javascript" src="js/plugins/tableexport/jspdf/libs/base64.js"></script>        
+        
         <!-- END THIS PAGE PLUGINS -->    
         <!-- START TEMPLATE -->
         <script type="text/javascript" src="js/plugins.js"></script>        
         <script type="text/javascript" src="js/actions.js"></script>        
         <!-- END TEMPLATE -->
         <script>
-            $(function(){
+            $(function () {
                 //Spinner
                 $(".spinner_default").spinner()
-                $(".spinner_decimal").spinner({step: 0.01, numberFormat: "n"});                
+                $(".spinner_decimal").spinner({step: 0.01, numberFormat: "n"});
                 //End spinner
                 //Datepicker
                 $('#dp-2').datepicker();
-                $('#dp-3').datepicker({startView: 2,viewMode: 'years',format: 'yyyy-mm',minViewMode: "months"});
-                $('#dp-4').datepicker({startView: 1});
-                $('#dp-5').datepicker({startView: 2,viewMode: 'years',format: 'yyyy-mm',minViewMode: "months"});
-                $('#dp-6').datepicker({startView: 2,format: 'yyyy-mm-dd'});
+                $('#dp-3').datepicker({startView: 2, viewMode: 'years', format: 'yyyy', minViewMode: "years"});
+                $('#dp-4').datepicker({startView: 2, viewMode: 'years', format: 'yyyy', minViewMode: "years"});
+                $('#dp-5').datepicker({startView: 2, viewMode: 'years', format: 'yyyy-mm', minViewMode: "months"});
+                $('#dp-6').datepicker({startView: 2, format: 'yyyy-mm-dd'});
                 //End Datepicker
             });
         </script>
-    <!-- END SCRIPTS -->       
+        <!-- END SCRIPTS -->       
     </body>
 </html>
 

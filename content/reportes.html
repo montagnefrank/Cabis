@@ -1,110 +1,1156 @@
 <!--
 CONTENIDO DE LA SECCION DE INICIO
 -->
-                <!-- INDICE -->
-                <ul class="breadcrumb">
-                    <li><a href="#">CABIS</a></li>                    
-                    <li class="active">Reportes</li>
-                </ul>
-                <!-- FIN INDICE --> 
-                <div class="page-content-wrap">
-                    <!-- WIDGETS -->
-                    <!-- TITULO -->
-                    <div class="col-md-9">
-                        <div class="widget widget-default widget-item-icon">
-                            <div class="widget-item-left">
-                                <span class="fa fa-bar-chart"></span>
-                            </div>
-                            <div class="widget-data">
-                                <div class="widget-int num-count">Reportes</div>
-                                <div class="widget-title"></div>
-                                <div class="widget-subtitle">Área de descarga de reportes</div>
-                            </div>                      
-                        </div>    
-                    </div>
-                    <!-- FIN TITULO -->
-                    <!-- WIDGET RELOJ -->
-                    <div class="col-md-3">
-                        <div class="widget widget-danger widget-padding-sm">
-                            <div class="widget-big-int plugin-clock">00:00</div>                            
-                            <div class="widget-subtitle plugin-date">Loading...</div>
-                            <div class="widget-buttons widget-c3">
-                                <div class="col">
-                                    <a href="#"><span class="fa fa-clock-o"></span></a>
-                                </div>
-                                <div class="col">
-                                    <a href="#"><span class="fa fa-bell"></span></a>
-                                </div>
-                                <div class="col">
-                                    <a href="#"><span class="fa fa-calendar"></span></a>
-                                </div>
-                            </div>                            
-                        </div>    
-                    </div>
-                    <!-- FIN WIDGET RELOJ -->
-                    <!--  -->
-                    <div class="col-sm-4">
-                            <!-- REPORTE ?? -->
-                            <div class="panel panel-default">
-                                <div class="panel-body">
-                                    <h3>Ventas</h3>
-                                    <form class="form-horizontal" role="form">     
-                                        <div class="form-group">
-                                            <label class="col-md-2 control-label"> Región</label>
-                                            <div class="col-md-3">
-                                                <label class="check"><input type="radio" class="icheckbox" name="iradio" checked="checked"/> R1</label>
-                                            </div>
-                                            <div class="col-md-3">                                    
-                                                <label class="check"><input type="radio" class="icheckbox" name="iradio"/> R2</label>
-                                            </div>
-                                            <div class="col-md-3">                                    
-                                                <label class="check"><input type="radio" class="icheckbox" name="iradio"/> R3</label>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="file" class="fileinput btn-danger" name="filename3" id="filename3" data-filename-placement="inside" title="Explorar..."/>
-                                            <button class="btn btn-primary pull-right"><span class="fa fa-cloud-upload"></span>Subir Ventas</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <!-- REPORTE ?? -->
-                            <!-- REPORTE ?? -->
-                            <div class="panel panel-default">
-                                <div class="panel-body">
-                                    <h3>Compras</h3>
-                                    <form class="form-horizontal" role="form">     
-                                        <div class="form-group">
-                                            <label class="col-md-3 control-label">Producto</label>
-                                            <div class="col-md-8">                                                                                
-                                                <select class="form-control select" data-style="btn-success">
-                                                    <option>CHIP</option>
-                                                    <option>KIT</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-md-2 control-label"> Región</label>
-                                            <div class="col-md-3">
-                                                <label class="check"><input type="radio" class="icheckbox" name="iradio" checked="checked"/> R1</label>
-                                            </div>
-                                            <div class="col-md-3">                                    
-                                                <label class="check"><input type="radio" class="icheckbox" name="iradio"/> R2</label>
-                                            </div>
-                                            <div class="col-md-3">                                    
-                                                <label class="check"><input type="radio" class="icheckbox" name="iradio"/> R3</label>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="file" class="fileinput btn-danger" name="filename3" id="filename3" data-filename-placement="inside" title="Explorar..."/>
-                                            <button class="btn btn-primary pull-right"><span class="fa fa-cloud-upload"></span>Subir Ventas</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div> 
-                            <!-- REPORTE ?? -->
-                        </div>
-                    <!-- REPORTES ?? -->
+<!-- INDICE -->
+<ul class="breadcrumb">
+    <li><a href="#">CABIS</a></li>                    
+    <li class="active">Reportes</li>
+</ul>
+<!-- FIN INDICE --> 
+<div class="page-content-wrap">
+    <!-- WIDGETS -->
+    <!-- TITULO -->
+    <div class="col-md-9">
+        <div class="widget widget-default widget-item-icon">
+            <div class="widget-item-left">
+                <span class="fa fa-bar-chart"></span>
+            </div>
+            <div class="widget-data">
+                <div class="widget-int num-count">Reportes</div>
+                <div class="widget-title"></div>
+                <div class="widget-subtitle">Área de descarga de reportes</div>
+            </div>                      
+        </div>    
+    </div>
+    <!-- FIN TITULO -->
+    <!-- WIDGET RELOJ -->
+    <div class="col-md-3">
+        <div class="widget widget-danger widget-padding-sm">
+            <div class="widget-big-int plugin-clock">00:00</div>                            
+            <div class="widget-subtitle plugin-date">Loading...</div>
+            <div class="widget-buttons widget-c3">
+                <div class="col">
+                    <a href="#"><span class="fa fa-clock-o"></span></a>
                 </div>
-                    
-                
+                <div class="col">
+                    <a href="#"><span class="fa fa-bell"></span></a>
+                </div>
+                <div class="col">
+                    <a href="#"><span class="fa fa-calendar"></span></a>
+                </div>
+            </div>                            
+        </div>    
+    </div>
+    <!-- FIN WIDGET RELOJ -->
+    <!-- TABS -->
+    <div class="page-tabs">
+        <a href="#gerencial" class="active">Gerenciales</a>
+        <a href="#ventas">Ventas</a>
+        <a href="#audit">Auditoria de Ingresos</a>
+        <a href="#monitor">Monitoreo</a>
+    </div>
+    <!-- REPORTES GERENCIALES -->
+    <div class="page-content-wrap page-tabs-item active" id="gerencial">
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h3>Efectividad</h3> 
+                    <h5>Regularizaciones y Recargas</h5>
+                    <form class="form-horizontal" role="form">     
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Producto</label>
+                            <div class="col-md-9">                                                                                
+                                <select class="form-control select" data-style="btn-success">
+                                    <option>CHIP</option>
+                                    <option>KIT</option>
+                                </select>
+                            </div>
+                        </div>   
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Año</label>
+                            <div class="col-md-5">
+                                <div class="input-group date">
+                                    <input type="text" id="dp-3" class="form-control" value="2016"/>
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label"></label>
+                            <div class="col-md-10">
+                                <button class="btn btn-primary pull-right"><span class="fa fa-cloud-download"></span> Descargar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>  
+        </div> 
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h3>Efectividad</h3> 
+                    <h5>Regularizaciones y Recargas</h5>
+                    <form class="form-horizontal" role="form">     
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Producto</label>
+                            <div class="col-md-9">                                                                                
+                                <select class="form-control select" data-style="btn-success">
+                                    <option>CHIP</option>
+                                    <option>KIT</option>
+                                </select>
+                            </div>
+                        </div>   
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Año</label>
+                            <div class="col-md-5">
+                                <div class="input-group date">
+                                    <input type="text" id="dp-3" class="form-control" value="2016"/>
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label"></label>
+                            <div class="col-md-10">
+                                <button class="btn btn-primary pull-right"><span class="fa fa-cloud-download"></span> Descargar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>  
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h3>Rentabilidad</h3> 
+                    <h5>Canales de venta</h5>
+                    <form class="form-horizontal" role="form">     
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Producto</label>
+                            <div class="col-md-9">                                                                                
+                                <select class="form-control select" data-style="btn-success">
+                                    <option>CHIP</option>
+                                    <option>KIT</option>
+                                </select>
+                            </div>
+                        </div>   
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Rango venta</label>
+                            <div class="col-md-9">
+                                <div class="input-group">
+                                    <input type="text" class="form-control datepicker" value="2016-10-01"/>
+                                    <span class="input-group-addon add-on"> - </span>
+                                    <input type="text" class="form-control datepicker" value="2016-10-05"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Rango comisión</label>
+                            <div class="col-md-9">
+                                <div class="input-group">
+                                    <input type="text" class="form-control datepicker" value="2016-10-01"/>
+                                    <span class="input-group-addon add-on"> - </span>
+                                    <input type="text" class="form-control datepicker" value="2016-10-05"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label"></label>
+                            <div class="col-md-10">
+                                <button class="btn btn-primary pull-right"><span class="fa fa-cloud-download"></span> Descargar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>  
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h3>Rentabilidad</h3> 
+                    <h5>Descargar rentabilidad global</h5>
+                    <form class="form-horizontal" role="form">     
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Producto</label>
+                            <div class="col-md-9">                                                                                
+                                <select class="form-control select" data-style="btn-success">
+                                    <option>CHIP</option>
+                                    <option>KIT</option>
+                                </select>
+                            </div>
+                        </div>   
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Año</label>
+                            <div class="col-md-5">
+                                <div class="input-group date">
+                                    <input type="text" id="dp-4" class="form-control" value="2016"/>
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label"></label>
+                            <div class="col-md-10">
+                                <button class="btn btn-primary pull-right"><span class="fa fa-cloud-download"></span> Descargar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>  
+        </div> 
+    </div>
+    <!-- FIN REPORTES GERENCIALES -->
+    <!-- REPORTES DE VENTAS -->
+    <div class="page-content-wrap page-tabs-item" id="ventas">
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h3>Activaciones y Recargas</h3> 
+                    <form class="form-horizontal" role="form">     
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Rango activación</label>
+                            <div class="col-md-8">
+                                <div class="input-group">
+                                    <input type="text" class="form-control datepicker" value="2016-10-01"/>
+                                    <span class="input-group-addon add-on"> - </span>
+                                    <input type="text" class="form-control datepicker" value="2016-10-05"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Producto</label>
+                            <div class="col-md-8">                                                                                
+                                <select class="form-control select" data-style="btn-success">
+                                    <option>CHIP</option>
+                                    <option>KIT</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Fecha recarga</label>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control datepicker" value="2016-10-01"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label"></label>
+                            <div class="col-md-10">
+                                <button class="btn btn-primary pull-right"><span class="fa fa-cloud-download"></span> Descargar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>  
+        </div> 
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h3>Ventas y Recargas</h3> 
+                    <form class="form-horizontal" role="form">     
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Rango activación</label>
+                            <div class="col-md-8">
+                                <div class="input-group">
+                                    <input type="text" class="form-control datepicker" value="2016-10-01"/>
+                                    <span class="input-group-addon add-on"> - </span>
+                                    <input type="text" class="form-control datepicker" value="2016-10-05"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Producto</label>
+                            <div class="col-md-8">                                                                                
+                                <select class="form-control select" data-style="btn-success">
+                                    <option>CHIP</option>
+                                    <option>KIT</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Estados</label>
+                            <div class="col-md-8">                                                                                
+                                <select class="form-control select" data-style="btn-success">
+                                    <option>ACTIVOS RECARGA</option>
+                                    <option>ACTIVOS NO RECARGA</option>
+                                    <option>INACTIVOS</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Fecha recarga</label>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control datepicker" value="2016-10-01"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label"></label>
+                            <div class="col-md-10">
+                                <button class="btn btn-primary pull-right"><span class="fa fa-cloud-download"></span> Descargar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>  
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h3>Ventas regularizadas por canal</h3> 
+                    <form class="form-horizontal" role="form">     
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Rango despacho</label>
+                            <div class="col-md-8">
+                                <div class="input-group">
+                                    <input type="text" class="form-control datepicker" value="2016-10-01"/>
+                                    <span class="input-group-addon add-on"> - </span>
+                                    <input type="text" class="form-control datepicker" value="2016-10-05"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Producto</label>
+                            <div class="col-md-8">                                                                                
+                                <select class="form-control select" data-style="btn-success">
+                                    <option>CHIP</option>
+                                    <option>KIT</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label"></label>
+                            <div class="col-md-10">
+                                <button class="btn btn-primary pull-right"><span class="fa fa-cloud-download"></span> Descargar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <!-- FIN REPORTES DE VENTAS -->
+    <!-- AUDITORIA DE INGRESOS -->
+    <div class="page-content-wrap page-tabs-item" id="audit">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h3>Diferencias en comisiones</h3> 
+                        <form class="form-horizontal" role="form">     
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">Año y mes</label>
+                                <div class="col-md-8">
+                                    <div class="input-group date">
+                                        <input type="text" id="dp-5" class="form-control" value="2016-10"/>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">Período</label>
+                                <div class="col-md-8">                                                                                
+                                    <select class="form-control select" data-style="btn-success">
+                                        <option>PRIMERO</option>
+                                        <option>SEGUNDO</option>
+                                        <option>TERCERO</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">Producto</label>
+                                <div class="col-md-8">                                                                                
+                                    <select class="form-control select" data-style="btn-success">
+                                        <option>CHIP</option>
+                                        <option>KIT</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-2 control-label"></label>
+                                <div class="col-md-10">
+                                    <button class="btn btn-primary pull-right"><span class="fa fa-cloud-download"></span> Descargar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>  
+            </div> 
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h3>Diferencias en bonos</h3> 
+                        <form class="form-horizontal" role="form">     
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">Año y mes</label>
+                                <div class="col-md-8">
+                                    <div class="input-group date">
+                                        <input type="text" id="dp-5" class="form-control" value="2016-10"/>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">Producto</label>
+                                <div class="col-md-8">                                                                                
+                                    <select class="form-control select" data-style="btn-success">
+                                        <option>CHIP</option>
+                                        <option>KIT</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-2 control-label"></label>
+                                <div class="col-md-10">
+                                    <button class="btn btn-primary pull-right"><span class="fa fa-cloud-download"></span> Descargar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h3>Incrementar ingresos</h3> 
+                        <h5>resumen de líneas para incrementar ingresos</h5> 
+                        <form class="form-horizontal" role="form">    
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">Producto</label>
+                                <div class="col-md-8">                                                                                
+                                    <select class="form-control select" data-style="btn-success">
+                                        <option>CHIP</option>
+                                        <option>KIT</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-2 control-label"></label>
+                                <div class="col-md-10">
+                                    <button class="btn btn-primary pull-right"><span class="fa fa-cloud-download"></span> Descargar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>  
+            </div>
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h3>Auditoría de líneas recargadas</h3> 
+                        <form class="form-horizontal" role="form">  
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">Producto</label>
+                                <div class="col-md-8">                                                                                
+                                    <select class="form-control select" data-style="btn-success">
+                                        <option>CHIP</option>
+                                        <option>KIT</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">Rango comisión</label>
+                                <div class="col-md-8">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control datepicker" value="2016-10-01"/>
+                                        <span class="input-group-addon add-on"> - </span>
+                                        <input type="text" class="form-control datepicker" value="2016-10-05"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-2 control-label"></label>
+                                <div class="col-md-10">
+                                    <button class="btn btn-primary pull-right"><span class="fa fa-cloud-download"></span> Descargar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>  
+            </div>
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h3>Control de inventario</h3> 
+                        <form class="form-horizontal" role="form">  
+                            <div class="form-group">
+                                <label class="col-md-4 control-label"> Fecha</label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control datepicker" value="2016-10-01"/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">Producto</label>
+                                <div class="col-md-8">                                                                                
+                                    <select class="form-control select" data-style="btn-success">
+                                        <option>CHIP</option>
+                                        <option>KIT</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-2 control-label"></label>
+                                <div class="col-md-10">
+                                    <button class="btn btn-primary pull-right"><span class="fa fa-cloud-download"></span> Descargar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <!-- FIN AUDITORIA DE INGRESOS -->
+    <!-- MONITOREO -->
+    <div class="page-content-wrap page-tabs-item" id="monitor">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Monitoreo de procesos</h3>
+                    <div class="btn-group pull-right">
+                        <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars"></i> Exportar</button>
+                        <ul class="dropdown-menu">
+                            <li class="divider"></li>
+                            <li><a href="#" onClick ="$('#monitoreo').tableExport({type: 'csv', escape: 'false'});"><img src='img/icons/csv.png' width="24"/> CSV</a></li>
+                            <li><a href="#" onClick ="$('#monitoreo').tableExport({type: 'txt', escape: 'false'});"><img src='img/icons/txt.png' width="24"/> TXT</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#" onClick ="$('#monitoreo').tableExport({type: 'excel', escape: 'false'});"><img src='img/icons/xls.png' width="24"/> XLS</a></li>
+                            <li><a href="#" onClick ="$('#monitoreo').tableExport({type: 'doc', escape: 'false'});"><img src='img/icons/word.png' width="24"/> Word</a></li>
+                            <li><a href="#" onClick ="$('#monitoreo').tableExport({type: 'powerpoint', escape: 'false'});"><img src='img/icons/ppt.png' width="24"/> PowerPoint</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#" onClick ="$('#monitoreo').tableExport({type: 'pdf', escape: 'false'});"><img src='img/icons/pdf.png' width="24"/> PDF</a></li>
+                        </ul>
+                    </div>  
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table id="monitoreo" class="table datatable">
+                            <thead>
+                                <tr>
+                                    <th>COMPRAS</th>
+                                    <th>VENTAS</th>
+                                    <th>AVISOS CHIP</th>
+                                    <th>AVISOS KIT</th>
+                                    <th>BONOS</th>
+                                    <th>COMISIONES</th>
+                                    <th>REGULARIZACIONES</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>2016-10-01</th>
+                                    <th>2016-10-01</th>
+                                    <th>2016-10-01</th>
+                                    <th>2016-10-01</th>
+                                    <th>2016-10-01</th>
+                                    <th>2016-10-01</th>
+                                    <th>2016-10-01</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/09/30</th>
+                                    <th>2016/09/30</th>
+                                    <th>2016/09/30</th>
+                                    <th>2016/09/30</th>
+                                    <th>2016/09/30</th>
+                                    <th>2016/09/30</th>
+                                    <th>2016/09/30</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/09/29</th>
+                                    <th>2016/09/29</th>
+                                    <th>2016/09/29</th>
+                                    <th>2016/09/29</th>
+                                    <th>2016/09/29</th>
+                                    <th>2016/09/29</th>
+                                    <th>2016/09/29</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/09/28</th>
+                                    <th>2016/09/28</th>
+                                    <th>2016/09/28</th>
+                                    <th>2016/09/28</th>
+                                    <th>2016/09/28</th>
+                                    <th>2016/09/28</th>
+                                    <th>2016/09/28</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/09/27</th>
+                                    <th>2016/09/27</th>
+                                    <th>2016/09/27</th>
+                                    <th>2016/09/27</th>
+                                    <th>2016/09/27</th>
+                                    <th>2016/09/27</th>
+                                    <th>2016/09/27</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/09/26</th>
+                                    <th>2016/09/26</th>
+                                    <th>2016/09/26</th>
+                                    <th>2016/09/26</th>
+                                    <th>2016/09/26</th>
+                                    <th>2016/09/26</th>
+                                    <th>2016/09/26</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/09/25</th>
+                                    <th>2016/09/25</th>
+                                    <th>2016/09/25</th>
+                                    <th>2016/09/25</th>
+                                    <th>2016/09/25</th>
+                                    <th>2016/09/25</th>
+                                    <th>2016/09/25</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/09/24</th>
+                                    <th>2016/09/24</th>
+                                    <th>2016/09/24</th>
+                                    <th>2016/09/24</th>
+                                    <th>2016/09/24</th>
+                                    <th>2016/09/24</th>
+                                    <th>2016/09/24</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/09/23</th>
+                                    <th>2016/09/23</th>
+                                    <th>2016/09/23</th>
+                                    <th>2016/09/23</th>
+                                    <th>2016/09/23</th>
+                                    <th>2016/09/23</th>
+                                    <th>2016/09/23</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/09/22</th>
+                                    <th>2016/09/22</th>
+                                    <th>2016/09/22</th>
+                                    <th>2016/09/22</th>
+                                    <th>2016/09/22</th>
+                                    <th>2016/09/22</th>
+                                    <th>2016/09/22</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/09/21</th>
+                                    <th>2016/09/21</th>
+                                    <th>2016/09/21</th>
+                                    <th>2016/09/21</th>
+                                    <th>2016/09/21</th>
+                                    <th>2016/09/21</th>
+                                    <th>2016/09/21</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/09/20</th>
+                                    <th>2016/09/20</th>
+                                    <th>2016/09/20</th>
+                                    <th>2016/09/20</th>
+                                    <th>2016/09/20</th>
+                                    <th>2016/09/20</th>
+                                    <th>2016/09/20</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/09/19</th>
+                                    <th>2016/09/19</th>
+                                    <th>2016/09/19</th>
+                                    <th>2016/09/19</th>
+                                    <th>2016/09/19</th>
+                                    <th>2016/09/19</th>
+                                    <th>2016/09/19</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/09/18</th>
+                                    <th>2016/09/18</th>
+                                    <th>2016/09/18</th>
+                                    <th>2016/09/18</th>
+                                    <th>2016/09/18</th>
+                                    <th>2016/09/18</th>
+                                    <th>2016/09/18</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/09/17</th>
+                                    <th>2016/09/17</th>
+                                    <th>2016/09/17</th>
+                                    <th>2016/09/17</th>
+                                    <th>2016/09/17</th>
+                                    <th>2016/09/17</th>
+                                    <th>2016/09/17</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/09/16</th>
+                                    <th>2016/09/16</th>
+                                    <th>2016/09/16</th>
+                                    <th>2016/09/16</th>
+                                    <th>2016/09/16</th>
+                                    <th>2016/09/16</th>
+                                    <th>2016/09/16</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/09/15</th>
+                                    <th>2016/09/15</th>
+                                    <th>2016/09/15</th>
+                                    <th>2016/09/15</th>
+                                    <th>2016/09/15</th>
+                                    <th>2016/09/15</th>
+                                    <th>2016/09/15</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/09/14</th>
+                                    <th>2016/09/14</th>
+                                    <th>2016/09/14</th>
+                                    <th>2016/09/14</th>
+                                    <th>2016/09/14</th>
+                                    <th>2016/09/14</th>
+                                    <th>2016/09/14</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/09/13</th>
+                                    <th>2016/09/13</th>
+                                    <th>2016/09/13</th>
+                                    <th>2016/09/13</th>
+                                    <th>2016/09/13</th>
+                                    <th>2016/09/13</th>
+                                    <th>2016/09/13</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/09/12</th>
+                                    <th>2016/09/12</th>
+                                    <th>2016/09/12</th>
+                                    <th>2016/09/12</th>
+                                    <th>2016/09/12</th>
+                                    <th>2016/09/12</th>
+                                    <th>2016/09/12</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/09/11</th>
+                                    <th>2016/09/11</th>
+                                    <th>2016/09/11</th>
+                                    <th>2016/09/11</th>
+                                    <th>2016/09/11</th>
+                                    <th>2016/09/11</th>
+                                    <th>2016/09/11</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/09/10</th>
+                                    <th>2016/09/10</th>
+                                    <th>2016/09/10</th>
+                                    <th>2016/09/10</th>
+                                    <th>2016/09/10</th>
+                                    <th>2016/09/10</th>
+                                    <th>2016/09/10</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/09/09</th>
+                                    <th>2016/09/09</th>
+                                    <th>2016/09/09</th>
+                                    <th>2016/09/09</th>
+                                    <th>2016/09/09</th>
+                                    <th>2016/09/09</th>
+                                    <th>2016/09/09</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/09/08</th>
+                                    <th>2016/09/08</th>
+                                    <th>2016/09/08</th>
+                                    <th>2016/09/08</th>
+                                    <th>2016/09/08</th>
+                                    <th>2016/09/08</th>
+                                    <th>2016/09/08</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/09/07</th>
+                                    <th>2016/09/07</th>
+                                    <th>2016/09/07</th>
+                                    <th>2016/09/07</th>
+                                    <th>2016/09/07</th>
+                                    <th>2016/09/07</th>
+                                    <th>2016/09/07</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/09/06</th>
+                                    <th>2016/09/06</th>
+                                    <th>2016/09/06</th>
+                                    <th>2016/09/06</th>
+                                    <th>2016/09/06</th>
+                                    <th>2016/09/06</th>
+                                    <th>2016/09/06</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/09/05</th>
+                                    <th>2016/09/05</th>
+                                    <th>2016/09/05</th>
+                                    <th>2016/09/05</th>
+                                    <th>2016/09/05</th>
+                                    <th>2016/09/05</th>
+                                    <th>2016/09/05</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/09/04</th>
+                                    <th>2016/09/04</th>
+                                    <th>2016/09/04</th>
+                                    <th>2016/09/04</th>
+                                    <th>2016/09/04</th>
+                                    <th>2016/09/04</th>
+                                    <th>2016/09/04</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/09/03</th>
+                                    <th>2016/09/03</th>
+                                    <th>2016/09/03</th>
+                                    <th>2016/09/03</th>
+                                    <th>2016/09/03</th>
+                                    <th>2016/09/03</th>
+                                    <th>2016/09/03</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/09/02</th>
+                                    <th>2016/09/02</th>
+                                    <th>2016/09/02</th>
+                                    <th>2016/09/02</th>
+                                    <th>2016/09/02</th>
+                                    <th>2016/09/02</th>
+                                    <th>2016/09/02</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/09/01</th>
+                                    <th>2016/09/01</th>
+                                    <th>2016/09/01</th>
+                                    <th>2016/09/01</th>
+                                    <th>2016/09/01</th>
+                                    <th>2016/09/01</th>
+                                    <th>2016/09/01</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/08/31</th>
+                                    <th>2016/08/31</th>
+                                    <th>2016/08/31</th>
+                                    <th>2016/08/31</th>
+                                    <th>2016/08/31</th>
+                                    <th>2016/08/31</th>
+                                    <th>2016/08/31</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/08/30</th>
+                                    <th>2016/08/30</th>
+                                    <th>2016/08/30</th>
+                                    <th>2016/08/30</th>
+                                    <th>2016/08/30</th>
+                                    <th>2016/08/30</th>
+                                    <th>2016/08/30</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/08/29</th>
+                                    <th>2016/08/29</th>
+                                    <th>2016/08/29</th>
+                                    <th>2016/08/29</th>
+                                    <th>2016/08/29</th>
+                                    <th>2016/08/29</th>
+                                    <th>2016/08/29</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/08/28</th>
+                                    <th>2016/08/28</th>
+                                    <th>2016/08/28</th>
+                                    <th>2016/08/28</th>
+                                    <th>2016/08/28</th>
+                                    <th>2016/08/28</th>
+                                    <th>2016/08/28</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/08/27</th>
+                                    <th>2016/08/27</th>
+                                    <th>2016/08/27</th>
+                                    <th>2016/08/27</th>
+                                    <th>2016/08/27</th>
+                                    <th>2016/08/27</th>
+                                    <th>2016/08/27</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/08/26</th>
+                                    <th>2016/08/26</th>
+                                    <th>2016/08/26</th>
+                                    <th>2016/08/26</th>
+                                    <th>2016/08/26</th>
+                                    <th>2016/08/26</th>
+                                    <th>2016/08/26</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/08/25</th>
+                                    <th>2016/08/25</th>
+                                    <th>2016/08/25</th>
+                                    <th>2016/08/25</th>
+                                    <th>2016/08/25</th>
+                                    <th>2016/08/25</th>
+                                    <th>2016/08/25</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/08/24</th>
+                                    <th>2016/08/24</th>
+                                    <th>2016/08/24</th>
+                                    <th>2016/08/24</th>
+                                    <th>2016/08/24</th>
+                                    <th>2016/08/24</th>
+                                    <th>2016/08/24</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/08/23</th>
+                                    <th>2016/08/23</th>
+                                    <th>2016/08/23</th>
+                                    <th>2016/08/23</th>
+                                    <th>2016/08/23</th>
+                                    <th>2016/08/23</th>
+                                    <th>2016/08/23</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/08/22</th>
+                                    <th>2016/08/22</th>
+                                    <th>2016/08/22</th>
+                                    <th>2016/08/22</th>
+                                    <th>2016/08/22</th>
+                                    <th>2016/08/22</th>
+                                    <th>2016/08/22</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/08/21</th>
+                                    <th>2016/08/21</th>
+                                    <th>2016/08/21</th>
+                                    <th>2016/08/21</th>
+                                    <th>2016/08/21</th>
+                                    <th>2016/08/21</th>
+                                    <th>2016/08/21</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/08/20</th>
+                                    <th>2016/08/20</th>
+                                    <th>2016/08/20</th>
+                                    <th>2016/08/20</th>
+                                    <th>2016/08/20</th>
+                                    <th>2016/08/20</th>
+                                    <th>2016/08/20</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/08/19</th>
+                                    <th>2016/08/19</th>
+                                    <th>2016/08/19</th>
+                                    <th>2016/08/19</th>
+                                    <th>2016/08/19</th>
+                                    <th>2016/08/19</th>
+                                    <th>2016/08/19</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/08/18</th>
+                                    <th>2016/08/18</th>
+                                    <th>2016/08/18</th>
+                                    <th>2016/08/18</th>
+                                    <th>2016/08/18</th>
+                                    <th>2016/08/18</th>
+                                    <th>2016/08/18</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/08/17</th>
+                                    <th>2016/08/17</th>
+                                    <th>2016/08/17</th>
+                                    <th>2016/08/17</th>
+                                    <th>2016/08/17</th>
+                                    <th>2016/08/17</th>
+                                    <th>2016/08/17</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/08/16</th>
+                                    <th>2016/08/16</th>
+                                    <th>2016/08/16</th>
+                                    <th>2016/08/16</th>
+                                    <th>2016/08/16</th>
+                                    <th>2016/08/16</th>
+                                    <th>2016/08/16</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/08/15</th>
+                                    <th>2016/08/15</th>
+                                    <th>2016/08/15</th>
+                                    <th>2016/08/15</th>
+                                    <th>2016/08/15</th>
+                                    <th>2016/08/15</th>
+                                    <th>2016/08/15</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/08/14</th>
+                                    <th>2016/08/14</th>
+                                    <th>2016/08/14</th>
+                                    <th>2016/08/14</th>
+                                    <th>2016/08/14</th>
+                                    <th>2016/08/14</th>
+                                    <th>2016/08/14</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/08/13</th>
+                                    <th>2016/08/13</th>
+                                    <th>2016/08/13</th>
+                                    <th>2016/08/13</th>
+                                    <th>2016/08/13</th>
+                                    <th>2016/08/13</th>
+                                    <th>2016/08/13</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/08/12</th>
+                                    <th>2016/08/12</th>
+                                    <th>2016/08/12</th>
+                                    <th>2016/08/12</th>
+                                    <th>2016/08/12</th>
+                                    <th>2016/08/12</th>
+                                    <th>2016/08/12</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/08/11</th>
+                                    <th>2016/08/11</th>
+                                    <th>2016/08/11</th>
+                                    <th>2016/08/11</th>
+                                    <th>2016/08/11</th>
+                                    <th>2016/08/11</th>
+                                    <th>2016/08/11</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/08/10</th>
+                                    <th>2016/08/10</th>
+                                    <th>2016/08/10</th>
+                                    <th>2016/08/10</th>
+                                    <th>2016/08/10</th>
+                                    <th>2016/08/10</th>
+                                    <th>2016/08/10</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/08/09</th>
+                                    <th>2016/08/09</th>
+                                    <th>2016/08/09</th>
+                                    <th>2016/08/09</th>
+                                    <th>2016/08/09</th>
+                                    <th>2016/08/09</th>
+                                    <th>2016/08/09</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/08/08</th>
+                                    <th>2016/08/08</th>
+                                    <th>2016/08/08</th>
+                                    <th>2016/08/08</th>
+                                    <th>2016/08/08</th>
+                                    <th>2016/08/08</th>
+                                    <th>2016/08/08</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/08/07</th>
+                                    <th>2016/08/07</th>
+                                    <th>2016/08/07</th>
+                                    <th>2016/08/07</th>
+                                    <th>2016/08/07</th>
+                                    <th>2016/08/07</th>
+                                    <th>2016/08/07</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/08/06</th>
+                                    <th>2016/08/06</th>
+                                    <th>2016/08/06</th>
+                                    <th>2016/08/06</th>
+                                    <th>2016/08/06</th>
+                                    <th>2016/08/06</th>
+                                    <th>2016/08/06</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/08/05</th>
+                                    <th>2016/08/05</th>
+                                    <th>2016/08/05</th>
+                                    <th>2016/08/05</th>
+                                    <th>2016/08/05</th>
+                                    <th>2016/08/05</th>
+                                    <th>2016/08/05</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/08/04</th>
+                                    <th>2016/08/04</th>
+                                    <th>2016/08/04</th>
+                                    <th>2016/08/04</th>
+                                    <th>2016/08/04</th>
+                                    <th>2016/08/04</th>
+                                    <th>2016/08/04</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/08/03</th>
+                                    <th>2016/08/03</th>
+                                    <th>2016/08/03</th>
+                                    <th>2016/08/03</th>
+                                    <th>2016/08/03</th>
+                                    <th>2016/08/03</th>
+                                    <th>2016/08/03</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/08/02</th>
+                                    <th>2016/08/02</th>
+                                    <th>2016/08/02</th>
+                                    <th>2016/08/02</th>
+                                    <th>2016/08/02</th>
+                                    <th>2016/08/02</th>
+                                    <th>2016/08/02</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/08/01</th>
+                                    <th>2016/08/01</th>
+                                    <th>2016/08/01</th>
+                                    <th>2016/08/01</th>
+                                    <th>2016/08/01</th>
+                                    <th>2016/08/01</th>
+                                    <th>2016/08/01</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/07/31</th>
+                                    <th>2016/07/31</th>
+                                    <th>2016/07/31</th>
+                                    <th>2016/07/31</th>
+                                    <th>2016/07/31</th>
+                                    <th>2016/07/31</th>
+                                    <th>2016/07/31</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/07/30</th>
+                                    <th>2016/07/30</th>
+                                    <th>2016/07/30</th>
+                                    <th>2016/07/30</th>
+                                    <th>2016/07/30</th>
+                                    <th>2016/07/30</th>
+                                    <th>2016/07/30</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/07/29</th>
+                                    <th>2016/07/29</th>
+                                    <th>2016/07/29</th>
+                                    <th>2016/07/29</th>
+                                    <th>2016/07/29</th>
+                                    <th>2016/07/29</th>
+                                    <th>2016/07/29</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/07/28</th>
+                                    <th>2016/07/28</th>
+                                    <th>2016/07/28</th>
+                                    <th>2016/07/28</th>
+                                    <th>2016/07/28</th>
+                                    <th>2016/07/28</th>
+                                    <th>2016/07/28</th>
+                                </tr>
+                                <tr>
+                                    <th>2016/07/27</th>
+                                    <th>2016/07/27</th>
+                                    <th>2016/07/27</th>
+                                    <th>2016/07/27</th>
+                                    <th>2016/07/27</th>
+                                    <th>2016/07/27</th>
+                                    <th>2016/07/27</th>
+                                </tr>
+
+                            </tbody>
+                        </table>                                    
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <!-- FIN MONITOREO -->
+    <!-- FIN TABS -->
+</div>
+
+
+

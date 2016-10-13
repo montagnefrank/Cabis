@@ -17,26 +17,26 @@
         <!-- CONTENIDO -->
         <div class="page-container page-navigation-top-fixed">
             <!-- SIDEBAR -->
-            <?php require 'content/sidebar.html';?>
+            <?php require 'content/sidebar.html'; ?>
             <!-- FIN SIDEBAR -->
             <div class="page-content">
                 <!-- HEADER -->
-                <?php require 'content/header.html';?>
+                <?php require 'content/header.html'; ?>
                 <!-- FIN HEADER -->            
                 <!-- SECCION DE CONTENIDO -->
-                <?php include 'content/subir.html';?>
+                <?php include 'content/subir.html'; ?>
                 <!-- FIN SECCION DE CONTENIDO -->                                
             </div>            
         </div>
         <!-- FIN CONTENIDO -->
         <!-- SALIDA-->
-        <?php include 'content/mensajesalida.html';?>
+        <?php include 'content/mensajesalida.html'; ?>
         <!-- FIN SALIDA-->
         <!-- START PRELOADS -->
         <audio id="audio-alert" src="audio/alert.mp3" preload="auto"></audio>
         <audio id="audio-fail" src="audio/fail.mp3" preload="auto"></audio>
         <!-- END PRELOADS --> 
-    <!-- START SCRIPTS -->
+        <!-- START SCRIPTS -->
         <!-- START PLUGINS -->
         <script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
         <script type="text/javascript" src="js/plugins/jquery/jquery-ui.min.js"></script>
@@ -57,31 +57,31 @@
         <script type="text/javascript" src="js/actions.js"></script>        
         <!-- END TEMPLATE -->
         <script>
-            $(function() {
-                $("#agregarfila").click(function() {
-                  $("div.serieadicional").append('<div class="seriea2" input-group">');
-                  $("div.seriea2").append('<span class="seriea3" input-group-addon">##</span>');
-                  $("span.seriea3").append('<input type="text" class="seriea4 form-control" placeholder="Ingrese serie"/>');
-                  $("input.seriea4").append('</div>');
+            $(function () {
+                $("#agregarfila").click(function () {
+                    $("div.serieadicional").append('<div class="seriea2" input-group">');
+                    $("div.seriea2").append('<span class="seriea3" input-group-addon">##</span>');
+                    $("span.seriea3").append('<input type="text" class="seriea4 form-control" placeholder="Ingrese serie"/>');
+                    $("input.seriea4").append('</div>');
                 });
-              });
-            $(function(){
+            });
+            $(function () {
                 //Spinner
                 $(".spinner_default").spinner()
-                $(".spinner_decimal").spinner({step: 0.01, numberFormat: "n"});                
+                $(".spinner_decimal").spinner({step: 0.01, numberFormat: "n"});
                 //End spinner
                 //Datepicker
                 $('#dp-2').datepicker();
-                $('#dp-3').datepicker({startView: 2,viewMode: 'years',format: 'yyyy-mm',minViewMode: "months"});
+                $('#dp-3').datepicker({startView: 2, viewMode: 'years', format: 'yyyy-mm', minViewMode: "months"});
                 $('#dp-4').datepicker({startView: 1});
-                $('#dp-5').datepicker({startView: 2,viewMode: 'years',format: 'yyyy-mm',minViewMode: "months"});
-                $('#dp-6').datepicker({startView: 2,format: 'yyyy-mm-dd'});
-                $('#dp-7').datepicker({startView: 2,format: 'yyyy-mm-dd'});
-                $('#dp-8').datepicker({startView: 2,format: 'yyyy-mm-dd'});
+                $('#dp-5').datepicker({startView: 2, viewMode: 'years', format: 'yyyy-mm', minViewMode: "months"});
+                $('#dp-6').datepicker({startView: 2, format: 'yyyy-mm-dd'});
+                $('#dp-7').datepicker({startView: 2, format: 'yyyy-mm-dd'});
+                $('#dp-8').datepicker({startView: 2, format: 'yyyy-mm-dd'});
                 //End Datepicker
             });
         </script>
-    <!-- END SCRIPTS -->                   
+        <!-- END SCRIPTS -->                   
     </body>
 </html>
 
