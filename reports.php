@@ -75,7 +75,8 @@
                 $('#dp-3').datepicker({startView: 2, viewMode: 'years', format: 'yyyy', minViewMode: "years"});
                 $('#dp-4').datepicker({startView: 2, viewMode: 'years', format: 'yyyy', minViewMode: "years"});
                 $('#dp-5').datepicker({startView: 2, viewMode: 'years', format: 'yyyy-mm', minViewMode: "months"});
-                $('#dp-6').datepicker({startView: 2, format: 'yyyy-mm-dd'});
+                $('#dp-6').datepicker({startView: 2, viewMode: 'years', format: 'yyyy-mm', minViewMode: "months"});
+                $('#dp-7').datepicker({startView: 2, viewMode: 'years', format: 'yyyy', minViewMode: "years"});
                 //End Datepicker
             });
         </script>

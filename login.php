@@ -46,7 +46,8 @@
                     </form>
                 </div>
                 <div class="login-footer">
-                    <div class="pull-left">&copy; 2015 Tonga CABIS - Tonga Technology CIA, LTDA.</div>
+                    <div class="pull-left">¿No tienes cuenta? <a href="registration.php"><b>¡Regístrate ahora!</b></a></div>
+                    <div class="pull-right">&copy; 2017 CABIS - CABIS Tecnología CIA, LTDA.</div>
                     <div class="pull-right">
                         <a href="#">La empresa</a> |
                         <a href="#">Términos y condiciones</a> |
