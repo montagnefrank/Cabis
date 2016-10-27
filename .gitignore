@@ -13,7 +13,7 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
-source/*
+cabisgabo/*
 
 # Windows shortcuts
 *.lnk
